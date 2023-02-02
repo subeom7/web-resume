@@ -49,7 +49,7 @@ html, body {
     color: darkgrey;
     white-space: nowrap;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
@@ -72,7 +72,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 140vh;
     width: 100vw;
 }
 
@@ -220,6 +220,7 @@ html, body {
     color: darkgrey;
     white-space: nowrap;
     position: absolute;
+    /* position: fixed */
     top: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -227,7 +228,8 @@ html, body {
     letter-spacing: 0.1em;
     transition: 0.3s;
     text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 1px 0 grey, 1px 3px 0 grey,
-      1px 5px 0 grey
+      1px 5px 0 grey;
+    
 
   }
   
