@@ -12,13 +12,14 @@
 html, body {
     margin: 0; 
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: #18191f;
+    
 }
 
   /* Start of Name */
 
-.name {
+/* .name {
     color: darkgrey;
     white-space: nowrap;
     position: absolute;
@@ -40,7 +41,7 @@ html, body {
     text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
       1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
       1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
-  }
+  } */
 
   /* End of Name */
 
@@ -53,6 +54,7 @@ html, body {
     transform: translate(-50%, -50%);
     font-size: 3em;
     font-family: sans-serif;
+    
     letter-spacing: 0.1em;
     transition: 0.3s;
     text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
@@ -70,7 +72,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 180vh;
+    height: 150vh;
     width: 100vw;
 }
 
@@ -78,7 +80,7 @@ html, body {
 #gitlab,
 #github,
 #stackoverflow {
-    font-size: 3.5em;
+    font-size: 3em;
     /* background-color: #18191f; */
     color: #fff;
     box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
@@ -111,3 +113,133 @@ html, body {
 }
   
 
+/* ------------------------------ */
+
+/* nav {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    
+    top: 0px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 1em;
+  }
+  
+  nav a {
+    background-color: gray;
+    color: white;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: darkgray;
+    transform: translateY(-2px);
+  } */
+  
+  /* ------------------------ */
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+ 
+
+  
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    display: inline-block;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+  }
+  
+  .navMenu a:hover {
+    color: #fddb3a;
+  }
+  
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #fddb3a;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(110px);
+    transform: translateX(140px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(200px);
+    transform: translateX(235px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(285px);
+    transform: translateX(330px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu {
+    color: darkgrey;
+    white-space: nowrap;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 1px 0 grey, 1px 3px 0 grey,
+      1px 5px 0 grey
+
+  }
+  
+  .navMenu:hover {
+    transition: 0.3s;
+    transform: scale(1.1)translate(-50%, -50%);
+    text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -5px 0 grey,
+      1px -4px 0 grey
+  }
+
+  #project{
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  
