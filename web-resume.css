@@ -111,17 +111,41 @@ body {
     text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
 }
 
+#linkedin {
+  animation-delay: 0.5s;
+}
+
+#github {
+  animation-delay: 0.1s;
+}
+
+#stackoverflow {
+  animation-delay: 0.7s;
+}
+
 #gitlab {
     animation-delay: 0.3s;
 }
 
-#stackoverflow {
-    animation-delay: 0.7s;
+/* #linkedin {
+  animation-delay: 1s;
 }
 
 #github {
-    animation-delay: 0.1s;
+  animation-delay: 2s;
 }
+
+#stackoverflow {
+  animation-delay: 3s;
+}
+
+#gitlab {
+    animation-delay: 4s;
+} */
+
+
+
+
 
 @keyframes animate {
     from {
