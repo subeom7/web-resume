@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="web-resume.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="web-resume.js"></script>
 </head>
 
@@ -15,30 +16,17 @@
 
 <body>
    
+  <!-- ---------------- Main ---------------- -->
   <div id="content">
     <a href="https://ibb.co/Cnpjg7B"><img src="https://i.ibb.co/sFpTnwj/signature.png" alt="signature"></a>
 
   <nav class="navMenu">
     <a href="#social-anchor">Social</a>
-    <a href="#section2" id = "project">Project</a>
+    <a href="#project-anchor" id = "project">Project</a>
     <a href="#">Skills</a>
     <a href="#">Resume</a>
     <div class="dot"></div>
   </nav>
-
-
-
-
-  <!-- <nav id="nav">
-    <ul>
-      <li>MENU</li>
-      <li><a href="#section1" >Section 1</a></li>
-      <li><a href="#section2" >Section 2</a></li>
-      <li><a href="#section3" >Section 3</a></li>
-      <li><a href="#section4" >Section 4</a></li>
-    </ul>
-  </nav> -->
-        <!-- <p class="name">Subeom Kwon</p> -->
         
         <h1>
             <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I am Subeom Kwon.", "I am Software Developer.","I am a Problem Solver.", "I Love Design.", "I Love to Develop." ]'>
@@ -51,28 +39,298 @@
             <div class="arrow"></div>
           </a>
     
-
+<!-- ---------------- Social ---------------- -->
   <section id="section1" >
     <div class="social" id ="social">
       <a href='https://www.linkedin.com/in/subeomkwon/'><i class="fa fa-linkedin" id="linkedin"></i></a>
-      <a href='https://github.com/subeom7'><i class="fa fa-github-square github" id="github"></i></a>
+      <a href='https://github.com/subeom7'><i class="fa fa-github-square g ithub" id="github"></i></a>
       <a href='https://stackoverflow.com/users/16650828/sk7'><i class="fa fa-stack-overflow" id="stackoverflow"></i></a>
       <a href='https://git.cs.vt.edu/subeom7'><i class="fa fa-gitlab" id="gitlab"></i></a>
-      <a class="anchor" id="social-anchor"></a>
+      <a class="socialanchor" id="social-anchor"></a>
   </div>
   </section>
 
-  <section id="section2" >
-    <p></p>
-  </section>
-    <!-- ---------------------------------------------- -->
-    <!-- <div class="geography">
-      <a href="https://ibb.co/SPfRc0D"><img src="https://i.ibb.co/g34zdwb/geography.png" alt="geography"></a>
-      <a href="https://ibb.co/SPfRc0D"><img src="https://i.ibb.co/g34zdwb/geography.png" alt="geography"></a>
-      <a href="https://ibb.co/SPfRc0D"><img src="https://i.ibb.co/g34zdwb/geography.png" alt="geography"></a>
-      <a href="https://ibb.co/SPfRc0D"><img src="https://i.ibb.co/g34zdwb/geography.png" alt="geography"></a>
+
+     <!-- -----------------Start of Project Section------------------------ -->
+     <section id="section2" >
+      <div class="project">
+     <a class="projectanchor" id="project-anchor"></a>
+     <div class="ag-timeline-block">
+      <div class="ag-timeline_title-box">
+        <div class="ag-timeline_tagline">Timeline</div>
+        <div class="ag-timeline_title">Projects</div>
+      </div>
+      <section class="ag-section">
+        <div class="ag-format-container">
+          <div class="js-timeline ag-timeline">
+            <div class="js-timeline_line ag-timeline_line">
+              <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+            </div>
+            <div class="ag-timeline_list">
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Text Classification & Evaluation</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://cdn.pixabay.com/photo/2017/01/07/15/07/bible-1960635_960_720.jpg" class="ag-timeline-card_img" width="640" height="360" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Text Classification & Evaluation</div>
+                      <!-- will put icons of the used tools here (ex. mongo db, React.js) -->
+                      <div class="ag-timeline-card_desc">
+                        Built a web application that shows the content of a given webpage, and shows the output of the text classifier prediction. 
+                        Developed a web application for interactive evaluation of text classifier performance. User uploads text document (webpage, tweet, etc.), 
+                        text is processed by classifier and result displayed to user with relevant keywords highlighted. User can agree/disagree with result, 
+                        add/remove highlights, and save the classified text with annotations for future reference.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Recipe Realm</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Recipe Realm</div>
+                      <div class="ag-timeline-card_desc">
+                        Recipe Realm is a recipe platform that allows users to look up various recipes of dishes, search
+                        and filter the recipes by ingredients, cuisines, and dietary preferences. Users can also view the
+                        reviews of the recipes written by other users and write their own reviews after trying out the
+                        recipe. The website aims to provide a one-stop destination for users to find recipes of their
+                        choice and also get an idea about how others found the recipe before trying it themselves. The
+                        website also allows users to save their favorite recipes for easy access later on. The website aims
+                        to be an interactive platform for food enthusiasts to share, discover and explore new recipes from
+                        around the world and give their feedback on the recipes.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+            
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Personal Server</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507__340.jpg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Personal Server</div>
+                      <div class="ag-timeline-card_desc">
+                        Developed a personal web server using HTTP and TCP protocols for internetwork communication. 
+                        Implemented a concurrent server capable of handling multiple clients simultaneously and serving files, 
+                        streaming MP4 video, and providing token-based authentication API. 
+                        Utilized persistent connections as per the HTTP/1.1 protocol and made the code Linux-specific. 
+                        Familiarized with DNS, IP addresses, socket API calls, and essential debugging tools such as wget, curl, strace.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">DNA Tree</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://cdn.pixabay.com/photo/2018/07/15/10/44/dna-3539309__340.jpg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">DNA Tree</div>
+                      <div class="ag-timeline-card_desc">
+                        Implemented a DNA tree data structure for efficient storage and search of DNA sequences in a sequence database. The DNA tree is a 5-way branching tree with
+                         A, C, G, T, and $ as the five branches of the augmented DNA alphabet. ACGT is an acronym for the four types of bases found in aDNA molecule: 
+                         adenine (A), cytosine (C), guanine (G), and thymine (T)
+                         The tree stores sequences in leaf nodes and uses internal nodes as placeholders for search direction.
+                         Leaf nodes can split or merge based on insert and remove operations. The tree structure permits the storage of prefixes 
+                         and ensures efficient search by directing operations based on the first letter of the DNA sequence.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Arbitrary-Precision Arithmetic Package</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://media.istockphoto.com/id/1368203696/photo/abstract-digits-floating.jpg?b=1&s=170667a&w=0&k=20&c=-9ri3iQgSfhATmVo6efGWc9PgHFqga7ImSLrYKH-QJg=" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Arbitrary-Precision Arithmetic Package</div>
+                      <div class="ag-timeline-card_desc">
+                        Implemented an infinite precision arithmetic package for non-negative integers using Reverse Polish Notation (RPN). 
+                        The program reads expressions from an input file and performs arithmetic operations (addition, multiplication, exponentiation) 
+                        on operands consisting of any length strings of digits. The program eliminates excess zeros and handles errors in expression syntax.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">IOS Educational Geography App</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://cdn.pixabay.com/photo/2012/10/10/10/28/africa-60570_960_720.jpg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">IOS Educational Geography App</div>
+                      <div class="ag-timeline-card_desc">
+                        Built an educational geography app that immerses users in a variety of activities to improve geography knowledge.
+                        Brainstormed ideas and delegated technical responsibilities and tasks to team members during weekly meetings.
+                        Collaborated with a team of students using principles of agile development and source control (git/git flow).
+                        Gained further experience in Rest-API and parsing complex JSON data in Swift programming language and XCode
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2021</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Covid Data Visualization</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://cdn.pixabay.com/photo/2020/03/15/07/08/coronavirus-4932607__340.jpg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Covid Data Visualization</div>
+                      <div class="ag-timeline-card_desc">
+                        As a team, designed visual representation of Covid-19 CFR (case fatality ratio) data using Java/JavaFx
+                        Used API (open data sets) from CDC, and sorted and visually represented CFR data by race, gender, and locations etc.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Tower of Hanoi Solver</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2021</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://media.istockphoto.com/id/1408116973/photo/wooden-puzzle-tower-of-hanoi-with-color-rings-isolated-on-white-background-toy-for-kids.jpg?b=1&s=170667a&w=0&k=20&c=LurNNn334A8WWFz-xUFWeoG6eky8EpXVb2DA3NY-5Lo=" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Tower of Hanoi Solver</div>
+                      <div class="ag-timeline-card_desc">
+                        Implemented Tower of Hanoi solver with GUI.
+                       </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div> 
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2021</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Customer Mangement System</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://cdn.pixabay.com/photo/2017/06/14/16/20/network-2402637__340.jpg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Customer Mangement System</div>
+                      <div class="ag-timeline-card_desc">
+                       Implemented a Customer Management System using React, Node.js, express.js and AWS (Amazon RDS for MySQL)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+
+              
+              <!-- ---------------------------------------------------- -->
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-     -->
+  </div>
+    
+</section>
     </body>
 
 </html>
+
+<!-- --------------end of Project section ------------------------------------ -->
