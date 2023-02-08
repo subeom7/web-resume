@@ -1,3 +1,17 @@
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .view {
+      width: 400px;
+  }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .view {
+      width: 600px;
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -534,6 +548,18 @@ html {
   -o-transform: translateX(0);
   transform: translateX(0);
   border-radius: 30px;
+/* 
+  transform:
+  perspective(75em)
+  rotateX(18deg);
+box-shadow:
+  rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+  rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+border-radius: 10px;
+border: 1px solid; */
+
+
+
 }
 .ag-timeline-card_arrow {
   height: 18px;
@@ -585,6 +611,11 @@ html {
 .ag-timeline-card_desc {
   line-height: 1.45;
   
+  /* font-family: 'Courier New', Courier, monospace; */
+  
+  font-family: 'ESL Legend', sans-serif;
+  
+  font-weight: bold;
 
   font-size: 16px;
   color: #FFF;
