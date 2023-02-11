@@ -622,11 +622,11 @@ border: 1px solid; */
   font-size: 16px;
   color: #FFF;
 }
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /* -------------------- */
 
@@ -898,11 +898,11 @@ border: 1px solid; */
 /* end of contact title */
 /* start of contact */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 
 #light {
@@ -1056,7 +1056,7 @@ border: 1px solid; */
   color: #53d9d1;
   transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
   line-height: 2em;
-  padding: 30px;
+  padding: 20px;
   text-decoration: none;
 }
 
@@ -1111,6 +1111,7 @@ border: 1px solid; */
   transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
+/* Needs change */
 .link-two::before {
   content: "";
   position: absolute;
@@ -1119,7 +1120,8 @@ border: 1px solid; */
   height: 100%;
   top: 0;
   right: 0;
-  clip-path: polygon( 0% -20%, 100% -30%, 100% -10%, 0% 0%, 0% 130%, 100% 120%, 100% 100%, 0% 110%);
+  /* clip-path: polygon( 0% -20%, 100% -30%, 100% -10%, 0% 0%, 0% 130%, 100% 120%, 100% 100%, 0% 110%); */
+     clip-path: polygon( 0% -20%, 0% 0%, 0% -10%, 0% 0%, 0% 130%, 0% 120%, 100% 100%, 0% 110%);
   background-color: #f27b9b;
   transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
