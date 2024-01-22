@@ -199,7 +199,6 @@ body {
 
   margin-top: 20%;
   display: inline-block;
-  width: 20%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
@@ -276,8 +275,9 @@ body {
 }
 
 #project {
-  margin-right: 20px;
-  margin-left: 10px;
+  /* margin-right: 20px;
+  margin-left: 10px; */
+  margin-right: 0.1vw;
 }
 
 /* --------------------------------------- */
