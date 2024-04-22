@@ -1,3 +1,3 @@
-# subeomkwon.com
+# Subeom's Web Resume
 
-Access the website through [this](https://golden-tiramisu-0f3cab.netlify.app/) link.
+You can access the website through [this](https://golden-tiramisu-0f3cab.netlify.app/) link.
