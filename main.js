@@ -33,16 +33,38 @@ const sections = navAnchors
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
 
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    navAnchors.forEach((link) => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
-    });
+const setActiveLink = (sectionId) => {
+  navAnchors.forEach((link) => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${sectionId}`);
   });
-}, { rootMargin: '-35% 0px -55% 0px' });
+};
 
-sections.forEach((section) => sectionObserver.observe(section));
+const updateActiveSection = () => {
+  const scrollPosition = window.scrollY + 140;
+  const isNearBottom =
+    window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8;
+
+  if (isNearBottom) {
+    setActiveLink('contact');
+    return;
+  }
+
+  let currentSectionId = sections[0]?.id;
+
+  sections.forEach((section) => {
+    if (section.offsetTop <= scrollPosition) {
+      currentSectionId = section.id;
+    }
+  });
+
+  if (currentSectionId) {
+    setActiveLink(currentSectionId);
+  }
+};
+
+window.addEventListener('scroll', updateActiveSection, { passive: true });
+window.addEventListener('resize', updateActiveSection);
+updateActiveSection();
 
 const backToTopLink = document.querySelector('[data-back-to-top]');
 
