@@ -1,653 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Subeom Kwon — Software Engineer focused on AI/ML infrastructure, Kubernetes, GPU inference operations, and production backend systems." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="Subeom Kwon | Software Engineer" />
+    <meta property="og:description" content="AI/ML infrastructure, Kubernetes, GPU inference, backend systems." />
+    <meta property="og:type" content="website" />
+    <title>Subeom Kwon | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <span class="top-anchor" id="top" aria-hidden="true"></span>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="web-resume.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="web-resume.js"></script>
-</head>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Subeom Kwon home">
+          <span class="brand-mark">SK</span>
+          <span class="brand-text">Subeom Kwon</span>
+        </a>
 
-<body>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-  <!-- ---------------- Main ---------------- -->
-  <div id="content">
-    <a href="https://ibb.co/JzSbkqw"><img src="https://i.ibb.co/xMrc5Yt/signature.png" alt="signature"></a>
-
-
-    <nav class="navMenu">
-      <a href="#social-anchor">Social</a>
-      <a href="#project-anchor" id="project">Project</a>
-      <a href="#skill-anchor">Skills</a>
-      <a href="#contact-anchor">Contact</a>
-      <div class="dot"></div>
-    </nav>
-
-    <h1>
-      <a href="" class="typewrite" data-period="2000"
-        data-type='[ "Hi, I am Subeom Kwon", "I am a Software Developer","I am a Problem Solver", "I Love Design", "I Love Developing Softwares" ]'>
-        <span class="wrap"></span>
-      </a>
-    </h1>
-  </div>
-
-  <a data-scroll href="#social-anchor">
-    <div class="arrow"></div>
-  </a>
-
-  <!-- ---------------- Social ---------------- -->
-  <section id="section1">
-    <div class="social" id="social">
-      <a href='https://www.linkedin.com/in/subeomkwon/'><i class="fa fa-linkedin" id="linkedin"></i></a>
-      <a href='https://github.com/subeom7'><i class="fa fa-github-square g ithub" id="github"></i></a>
-      <a href='https://stackoverflow.com/users/16650828/sk7'><i class="fa fa-stack-overflow" id="stackoverflow"></i></a>
-      <a href='https://git.cs.vt.edu/subeom7'><i class="fa fa-gitlab" id="gitlab"></i></a>
-      <a class="socialanchor" id="social-anchor"></a>
-    </div>
-  </section>
-
-  <!-- -----------------Start of Project Section------------------------ -->
-  <section id="section2">
-    <div class="project">
-      <a class="projectanchor" id="project-anchor"></a>
-      <div class="ag-timeline-block">
-        <div class="ag-timeline_title-box">
-          <div class="ag-timeline_tagline">Timeline</div>
-          <div class="ag-timeline_title">Projects</div>
+        <div class="nav-links" data-nav-links>
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
         </div>
-        <section class="ag-section">
-          <div class="ag-format-container">
-            <div class="js-timeline ag-timeline">
-              <div class="js-timeline_line ag-timeline_line">
-                <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
-              </div>
-              <div class="ag-timeline_list">
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2023</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Text Classification & Evaluation</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img
-                          src="https://i.ibb.co/QN2z6DS/text.webp"
-                          class="ag-timeline-card_img" width="640" height="450" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Text Classification & Evaluation</div>
-                        <!-- will put icons of the used tools here (ex. mongo db, React.js) -->
-                        <div class="ag-timeline-card_desc">
-                          Built a web application that shows the content of a given webpage, and shows the output of the
-                          text classifier prediction.
-                          Developed a web application for interactive evaluation of text classifier performance. User
-                          uploads text document (webpage, tweet, etc.),
-                          text is processed by classifier and result displayed to user with relevant keywords
-                          highlighted. User can agree/disagree with result,
-                          add/remove highlights, and save the classified text with annotations for future reference.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
+      </nav>
+    </header>
 
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Recipe Realm</div>
-                    </div>
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2023</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img
-                          src="https://i.ibb.co/pWCRf6y/recipe.webp"
-                          class="ag-timeline-card_img" width="640" height="450" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Recipe Realm</div>
-                        <div class="ag-timeline-card_desc">
-                          Recipe Realm is a recipe platform that allows users to look up various recipes of dishes,
-                          search
-                          and filter the recipes by ingredients, cuisines, and dietary preferences. Users can also view
-                          the
-                          reviews of the recipes written by other users and write their own reviews after trying out the
-                          recipe. The website aims to provide a one-stop destination for users to find recipes of their
-                          choice and also get an idea about how others found the recipe before trying it themselves. The
-                          website also allows users to save their favorite recipes for easy access later on. The website
-                          aims
-                          to be an interactive platform for food enthusiasts to share, discover and explore new recipes
-                          from
-                          around the world and give their feedback on the recipes.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
+    <main id="main">
+      <section class="hero section-shell">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Seoul, South Korea · AI/ML Infrastructure</p>
+          <h1>Software Engineer building production AI infrastructure.</h1>
+          <p class="hero-copy">
+            I design and operate Kubernetes-based AI/ML inference pipelines, GPU model serving systems,
+            Redis queue workflows, CI/CD automation, and observability stacks for production medical AI workloads.
+          </p>
 
-
-
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2022</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Personal Server</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img
-                          src="https://i.ibb.co/XJ02TCv/server.webp"
-                          class="ag-timeline-card_img" width="640" height="450" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Personal Server</div>
-                        <div class="ag-timeline-card_desc">
-                          Developed a personal web server using HTTP and TCP protocols for internetwork communication.
-                          Implemented a concurrent server capable of handling multiple clients simultaneously and
-                          serving files,
-                          streaming MP4 video, and providing token-based authentication API.
-                          Utilized persistent connections as per the HTTP/1.1 protocol and made the code Linux-specific.
-                          Familiarized with DNS, IP addresses, socket API calls, and essential debugging tools such as
-                          wget, curl, strace.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">DNA Tree</div>
-                    </div>
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2022</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img
-                          src="https://i.ibb.co/M5GgSv4/dna-tree.webp"
-                          class="ag-timeline-card_img" width="640" height="450" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">DNA Tree</div>
-                        <div class="ag-timeline-card_desc">
-                          Implemented a DNA tree data structure for efficient storage and search of DNA sequences in a
-                          sequence database. The DNA tree is a 5-way branching tree with
-                          A, C, G, T, and $ as the five branches of the augmented DNA alphabet. ACGT is an acronym for
-                          the four types of bases found in aDNA molecule:
-                          adenine (A), cytosine (C), guanine (G), and thymine (T)
-                          The tree stores sequences in leaf nodes and uses internal nodes as placeholders for search
-                          direction.
-                          Leaf nodes can split or merge based on insert and remove operations. The tree structure
-                          permits the storage of prefixes
-                          and ensures efficient search by directing operations based on the first letter of the DNA
-                          sequence.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2022</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Arbitrary-Precision Arithmetic Package</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img
-                          src="https://i.ibb.co/k5mLrRD/arithmatic.webp"
-                          class="ag-timeline-card_img" width="640" height="450" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Arbitrary-Precision Arithmetic Package</div>
-                        <div class="ag-timeline-card_desc">
-                          Implemented an infinite precision arithmetic package for non-negative integers using Reverse
-                          Polish Notation (RPN).
-                          The program reads expressions from an input file and performs arithmetic operations (addition,
-                          multiplication, exponentiation)
-                          on operands consisting of any length strings of digits. The program eliminates excess zeros
-                          and handles errors in expression syntax.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">IOS Educational Geography App</div>
-                    </div>
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2022</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img
-                          src="https://i.ibb.co/KWxMLn3/geography.webp"
-                          class="ag-timeline-card_img" width="640" height="450" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">IOS Educational Geography App</div>
-                        <div class="ag-timeline-card_desc">
-                          Built an educational geography app that immerses users in a variety of activities to improve
-                          geography knowledge.
-                          Brainstormed ideas and delegated technical responsibilities and tasks to team members during
-                          weekly meetings.
-                          Collaborated with a team of students using principles of agile development and source control
-                          (git/git flow).
-                          Gained further experience in Rest-API and parsing complex JSON data in Swift programming
-                          language and XCode
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2021</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Covid Data Visualization</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img
-                          src="https://i.ibb.co/CvJZcdT/covid-data.webp"
-                          class="ag-timeline-card_img" width="640" height="450" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Covid Data Visualization</div>
-                        <div class="ag-timeline-card_desc">
-                          As a team, designed visual representation of Covid-19 CFR (case fatality ratio) data using
-                          Java/JavaFx
-                          Used API (open data sets) from CDC, and sorted and visually represented CFR data by race,
-                          gender, and locations etc.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Tower of Hanoi Solver</div>
-                    </div>
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2021</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img
-                          src="https://i.ibb.co/MZtJG0H/tower-hanoi.webp"
-                          class="ag-timeline-card_img" width="640" height="450" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Tower of Hanoi Solver</div>
-                        <div class="ag-timeline-card_desc">
-                          Implemented Tower of Hanoi solver with GUI.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-
-
-                <div class="js-timeline_item ag-timeline_item">
-                  <div class="ag-timeline-card_box">
-                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                      <div class="ag-timeline-card_point">2021</div>
-                    </div>
-                    <div class="ag-timeline-card_meta-box">
-                      <div class="ag-timeline-card_meta">Customer Management System</div>
-                    </div>
-                  </div>
-                  <div class="ag-timeline-card_item">
-                    <div class="ag-timeline-card_inner">
-                      <div class="ag-timeline-card_img-box">
-                        <img
-                          src="https://i.ibb.co/8shvRhG/customer-management.webp"
-                          class="ag-timeline-card_img" width="640" height="450" alt="" />
-                      </div>
-                      <div class="ag-timeline-card_info">
-                        <div class="ag-timeline-card_title">Customer Management System</div>
-                        <div class="ag-timeline-card_desc">
-                          Implemented a Customer Management System using React, Node.js, express.js and AWS (Amazon RDS
-                          for MySQL)
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ag-timeline-card_arrow"></div>
-                  </div>
-                </div>
-
-
-
-                <!-- ---------------------------------------------------- -->
-              </div>
-            </div>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="Subeom_Kwon_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+            <a class="button secondary" href="mailto:subeomkwon@gmail.com">Contact Me</a>
           </div>
-        </section>
-      </div>
-    </div>
 
-  </section>
-  <!-- Start of the Skill section --------- -->
-  <a class="skillanchor" id="skill-anchor"></a>
-  <span class="text">Skills</span>
-
-
-  <div class="container">
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-node"></i>
-          <h3>Node.js</h3>
+          <div class="social-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/subeomkwon/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/subeom7" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:subeomkwon@gmail.com">Email</a>
+          </div>
         </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p style="font-family:sans-serif">
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
 
+        <aside class="hero-card reveal" aria-label="Career highlights">
+          <div class="status-pill">
+            <span class="pulse"></span>
+            AI/ML Infrastructure · CKA
+          </div>
+          <div class="metric-grid">
+            <article>
+              <strong>15</strong>
+              <span>production AI models served</span>
+            </article>
+            <article>
+              <strong>90%</strong>
+              <span>cloud cost reduction through scale-to-zero</span>
+            </article>
+            <article>
+              <strong>250M</strong>
+              <span>DICOM objects migrated to AWS S3</span>
+            </article>
+            <article>
+              <strong>60TB</strong>
+              <span>medical imaging data migration scale</span>
+            </article>
+          </div>
+        </aside>
+      </section>
 
-          <a href="https://nodejs.org/en/" type="button">Visit Website</a>
+      <section class="section-shell compact" aria-label="Technical focus areas">
+        <div class="focus-grid">
+          <article class="focus-card reveal">
+            <span class="card-kicker">01</span>
+            <h2>AI Serving Platform</h2>
+            <p>Redis Queue ingestion, GPU worker execution, Kubernetes scheduling, and result upload workflows.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="card-kicker">02</span>
+            <h2>Event-Driven Autoscaling</h2>
+            <p>KEDA-based scale-to-zero model workers to optimize GPU utilization and reduce idle cloud spend.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="card-kicker">03</span>
+            <h2>Production Operations</h2>
+            <p>Prometheus, Grafana, cAdvisor, Node Exporter, Jenkins, ArgoCD, Helm, Docker, and Linux operations.</p>
+          </article>
         </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-js"></i>
-          <h3>Javascript</h3>
+      </section>
+
+      <section class="section-shell" id="work">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Current professional work</h2>
         </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
+
+        <article class="experience-card reveal">
+          <div class="experience-topline">
+            <div>
+              <h3>Software Engineer</h3>
+              <p>JLK · Publicly traded medical AI company specializing in stroke analysis</p>
+            </div>
+            <span>Jun 2024 — May 2026</span>
+          </div>
+
+          <ul class="impact-list">
+            <li>Designed and operated a production-grade AI inference pipeline serving 15 medical AI models on Kubernetes.</li>
+            <li>Replaced always-on cloud containers with a scale-to-zero architecture, reducing monthly cloud cost by roughly 7M KRW.</li>
+            <li>Configured KEDA to scale model workers from dedicated Redis queues only when requests arrive.</li>
+            <li>Used Kubernetes PriorityClasses to prevent GPU starvation across default and scale-out workloads.</li>
+            <li>Reduced cold-start pain from large CUDA images by triggering cluster-wide image pre-pulls through Jenkins and DaemonSet automation.</li>
+            <li>Built production visibility with Prometheus, Grafana, Node Exporter, and cAdvisor.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section-shell" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Projects</p>
+          <h2>Recent infrastructure projects</h2>
+          <p class="section-subtitle">Older school projects were removed so the portfolio focuses on current professional impact.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span>Production AI Platform</span>
+              <span>2024 — 2026</span>
+            </div>
+            <h3>Kubernetes-based AI/ML inference pipeline</h3>
+            <p>
+              Built an infrastructure-agnostic model serving flow from request ingestion to Redis Queue,
+              GPU worker execution, result upload, and monitoring for medical AI workloads.
+            </p>
+            <div class="tag-list">
+              <span>Kubernetes</span><span>KEDA</span><span>Redis</span><span>Docker</span><span>GPU Inference</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span>Data Migration</span>
+              <span>Jan — Feb 2025</span>
+            </div>
+            <h3>AWS S3 migration for medical imaging data</h3>
+            <p>
+              Migrated 250 million DICOM objects totaling 60TB from Ncloud Object Storage to AWS S3.
+              Used Terraform, AWS DataSync, boto3 orchestration, and greedy sharding to balance parallel workers.
+            </p>
+            <div class="tag-list">
+              <span>AWS S3</span><span>DataSync</span><span>Terraform</span><span>boto3</span><span>Python</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span>Deployment Optimization</span>
+              <span>2025</span>
+            </div>
+            <h3>Cold-start reduction for CUDA image rollouts</h3>
+            <p>
+              Large CUDA-based images caused 5–10 minute cold starts. I automated cluster-wide image pre-pulling
+              through a Jenkins-triggered DaemonSet to make model rollouts significantly faster.
+            </p>
+            <div class="tag-list">
+              <span>Jenkins</span><span>DaemonSet</span><span>CUDA</span><span>CI/CD</span><span>Linux</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>Stack I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <h3>Languages</h3>
+            <p>Python, Java</p>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Cloud & DevOps</h3>
+            <p>Kubernetes, Docker, KEDA, Helm, ArgoCD, Jenkins, AWS DataSync, EC2, S3, CloudFront</p>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Infrastructure</h3>
+            <p>Linux, Redis, Nginx, GPU inference operations, CUDA-based containers</p>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Backend</h3>
+            <p>FastAPI, Celery, Gunicorn, Uvicorn</p>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Observability</h3>
+            <p>Prometheus, Grafana, Node Exporter, cAdvisor</p>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Version Control</h3>
+            <p>GitLab, GitHub</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell split" id="education">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education & Certification</p>
+          <h2>Background</h2>
+        </div>
+        <div class="timeline-list">
+          <article class="timeline-card reveal">
+            <span>May 2023</span>
+            <h3>Virginia Tech</h3>
+            <p>Bachelor of Science in Computer Science · Graduated Cum Laude</p>
+          </article>
+          <article class="timeline-card reveal">
+            <span>Feb 2026</span>
+            <h3>Certified Kubernetes Administrator</h3>
+            <p>The Linux Foundation</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build reliable AI infrastructure.</h2>
           <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
+            I’m open to backend, infrastructure, platform engineering, and AI/ML infrastructure roles
+            where production reliability and system design matter.
           </p>
-
-
-          <a href="https://www.javascript.com/" type="button">Visit Website</a>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:subeomkwon@gmail.com">subeomkwon@gmail.com</a>
+            <a class="button secondary" href="Subeom_Kwon_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-java"></i>
-          <h3>Java</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
+      </section>
+    </main>
 
+    <footer class="footer">
+      <p>© <span id="year"></span> Subeom Kwon. Built with semantic HTML, CSS, and vanilla JavaScript.</p>
+      <a href="#top" data-back-to-top>Back to top</a>
+    </footer>
 
-          <a href="https://www.java.com/" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-html5"></i>
-          <h3>HTML</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
-          <a href="https://html.com/" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-css3-alt"></i>
-          <h3>CSS</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-react"></i>
-          <h3>React</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
-          <a href="https://reactjs.org/" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-swift"></i>
-          <h3>Swift</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
-          <a href="https://developer.apple.com/swift/" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-python"></i>
-          <h3>Python</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
-          <a href="https://www.python.org/" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-unity"></i>
-          <h3>Unity</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
-          <a href="https://unity.com/" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-linux"></i>
-          <h3>Linux</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
-          <a href="https://www.linux.org/" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-docker"></i>
-          <h3>Docker</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
-
-
-          <a href="https://www.docker.com/" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="face face1">
-        <div class="content">
-          <i class="fab fa-github"></i>
-          <h3>Git</h3>
-        </div>
-      </div>
-      <div class="face face2">
-        <div class="content">
-          <p>
-            Relevant Projects: Customer Management System, Text Classification & Evaluation
-          </p>
-          <a href="https://git-scm.com/" type="button">Visit Website</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
-
-
-  <!-- end of the Skill section --------- -->
-
-
-  <!-- Start of contact -->
-  <a class="contactanchor" id="contact-anchor"></a>
-
-  <div class="contact">
-    <div class="waviy">
-      <span style="--i:1">C</span>
-      <span style="--i:2">O</span>
-      <span style="--i:3">N</span>
-      <span style="--i:4">T</span>
-      <span style="--i:5">A</span>
-      <span style="--i:6">C</span>
-      <span style="--i:7">T</span>
-
-
-    </div>
-    <a href="https://www.linkedin.com/in/subeomkwon/" id="light" class='light1'>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span> Resume
-    </a>
-    
-    <a href="mailto: subeomkwon@gmail.com" id="light" class='light2'>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span> subeomkwon@gmail.com
-    </a>
-    <a href="tel: 703-774-6738" id="light3" class='light3'>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span> 703-774-6738
-    </a>
-  </div>
-
-  <div class="background-one">
-    <div class="link-container">
-      <a class="link-one" href="https://golden-tiramisu-0f3cab.netlify.app/" style="font-size: 20px">subeomkwon.com</a>
-    </div>
-  </div>
-  <div class="background-two link-container">
-    <a class="link-two" href="https://www.vt.edu/" style="font-size: 20px">Virginia Tech</a>
-  </div>
-  <div class="background-three link-container">
-    <a class="link-three" href="https://www.blacksburg.gov/" style="font-size: 20px">Blacksburg, VA, 24060</a>
-  </div>
-</body>
-
-
+    <script src="main.js"></script>
+  </body>
 </html>
