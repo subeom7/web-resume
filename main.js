@@ -81,3 +81,38 @@ backToTopLink?.addEventListener('click', (event) => {
     history.replaceState(null, '', window.location.pathname + window.location.search);
   }
 });
+
+const canAnimatePointer = window.matchMedia('(pointer: fine)').matches &&
+  !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (canAnimatePointer) {
+  let targetX = 0;
+  let targetY = 0;
+  let currentX = 0;
+  let currentY = 0;
+  let ticking = false;
+
+  const animateSpace = () => {
+    currentX += (targetX - currentX) * 0.08;
+    currentY += (targetY - currentY) * 0.08;
+
+    document.documentElement.style.setProperty('--space-x', `${currentX.toFixed(2)}px`);
+    document.documentElement.style.setProperty('--space-y', `${currentY.toFixed(2)}px`);
+
+    if (Math.abs(targetX - currentX) > 0.05 || Math.abs(targetY - currentY) > 0.05) {
+      requestAnimationFrame(animateSpace);
+    } else {
+      ticking = false;
+    }
+  };
+
+  window.addEventListener('pointermove', (event) => {
+    targetX = (event.clientX / window.innerWidth - 0.5) * 20;
+    targetY = (event.clientY / window.innerHeight - 0.5) * 20;
+
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(animateSpace);
+    }
+  }, { passive: true });
+}

@@ -603,3 +603,462 @@ h3 {
   height: 1px;
   pointer-events: none;
 }
+
+/* Cosmic theme update ------------------------------------------------------ */
+:root {
+  --bg: #030712;
+  --bg-soft: #07111f;
+  --border: rgba(129, 140, 248, 0.28);
+  --muted: #a6b0c3;
+  --accent: #7dd3fc;
+  --accent-strong: #a78bfa;
+  --accent-soft: rgba(99, 102, 241, 0.16);
+  --green: #22d3ee;
+  --violet: #8b5cf6;
+  --pink: #d946ef;
+  --shadow: 0 24px 90px rgba(0, 0, 0, 0.48);
+  --space-x: 0px;
+  --space-y: 0px;
+}
+
+body {
+  background: #02030a;
+  overflow-x: hidden;
+}
+
+body::before {
+  z-index: 0;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255,255,255,.08), transparent 32rem),
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: auto, 76px 76px, 76px 76px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.72), transparent 80%);
+}
+
+.space-scene {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.16), transparent 34rem),
+    radial-gradient(circle at 78% 8%, rgba(124, 58, 237, 0.22), transparent 36rem),
+    radial-gradient(circle at 85% 78%, rgba(217, 70, 239, 0.13), transparent 34rem),
+    linear-gradient(180deg, #02030a 0%, #030712 44%, #02030a 100%);
+}
+
+.site-header,
+main,
+.footer,
+.skip-link {
+  position: relative;
+}
+
+main,
+.footer {
+  z-index: 1;
+}
+
+.site-header {
+  background: rgba(2, 3, 10, 0.7);
+  border-bottom-color: rgba(129, 140, 248, 0.2);
+}
+
+.stars {
+  position: absolute;
+  inset: -25%;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.96) 1px, transparent 1.7px),
+    radial-gradient(circle, rgba(125,211,252,.85) 1px, transparent 1.8px),
+    radial-gradient(circle, rgba(167,139,250,.75) 1.2px, transparent 2px);
+  background-size: 86px 86px, 145px 145px, 230px 230px;
+  background-position: 0 0, 36px 64px, 120px 40px;
+  opacity: .5;
+  animation: starDrift 95s linear infinite;
+}
+
+.stars-b {
+  opacity: .26;
+  transform: scale(1.35);
+  animation-duration: 155s;
+  animation-direction: reverse;
+}
+
+.nebula {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(58px);
+  opacity: .42;
+  mix-blend-mode: screen;
+  will-change: transform;
+}
+
+.nebula-a {
+  top: -26vmax;
+  right: -20vmax;
+  width: 72vmax;
+  height: 72vmax;
+  background: conic-gradient(
+    from 120deg,
+    transparent,
+    rgba(56, 189, 248, .4),
+    rgba(99, 102, 241, .48),
+    rgba(168, 85, 247, .42),
+    transparent
+  );
+  animation: nebulaSpin 82s linear infinite;
+}
+
+.nebula-b {
+  top: 36%;
+  left: -36vmax;
+  width: 78vmax;
+  height: 78vmax;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(124, 58, 237, .38), transparent 60%),
+    conic-gradient(from 24deg, transparent, rgba(59, 130, 246, .28), rgba(217, 70, 239, .32), transparent);
+  animation: nebulaFloat 20s ease-in-out infinite alternate;
+}
+
+.nebula-c {
+  right: 18vw;
+  bottom: -30vmax;
+  width: 60vmax;
+  height: 60vmax;
+  background: radial-gradient(circle, rgba(14, 165, 233, .22), rgba(168, 85, 247, .13), transparent 68%);
+  animation: nebulaFloat 26s ease-in-out infinite alternate-reverse;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.planet-large {
+  top: clamp(92px, 15vh, 180px);
+  right: clamp(-84px, 5vw, 120px);
+  width: clamp(190px, 24vw, 390px);
+  aspect-ratio: 1;
+  background:
+    radial-gradient(circle at 28% 22%, rgba(255,255,255,.95), transparent 8%),
+    radial-gradient(circle at 34% 32%, #93c5fd 0 12%, #60a5fa 24%, #6366f1 46%, #10172a 74%);
+  box-shadow:
+    0 0 90px rgba(99, 102, 241, .44),
+    0 0 150px rgba(14, 165, 233, .16),
+    inset -34px -38px 70px rgba(0,0,0,.62);
+  opacity: .78;
+  animation: planetFloat 10s ease-in-out infinite alternate;
+}
+
+.planet-large::before {
+  content: "";
+  position: absolute;
+  inset: 43% -28%;
+  height: 16%;
+  border: 2px solid rgba(147, 197, 253, .52);
+  border-left-color: rgba(255,255,255,.18);
+  border-bottom-color: rgba(139, 92, 246, .34);
+  border-radius: 50%;
+  transform: rotate(-14deg);
+  filter: blur(.1px);
+}
+
+.planet-large::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(140deg, transparent 0 45%, rgba(0,0,0,.48) 72%);
+}
+
+.planet-small {
+  left: clamp(18px, 8vw, 140px);
+  bottom: 16vh;
+  width: clamp(68px, 8vw, 128px);
+  aspect-ratio: 1;
+  background:
+    radial-gradient(circle at 32% 26%, #f0f9ff, transparent 10%),
+    radial-gradient(circle at 38% 34%, #c084fc, #2563eb 48%, #020617 76%);
+  box-shadow: 0 0 52px rgba(96, 165, 250, .3), inset -20px -22px 46px rgba(0,0,0,.58);
+  opacity: .5;
+  animation: planetFloatSmall 13s ease-in-out infinite alternate;
+}
+
+.orbital-system {
+  position: absolute;
+  right: 2vw;
+  top: 57vh;
+  width: clamp(230px, 34vw, 520px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(125, 211, 252, .16);
+  border-radius: 50%;
+  opacity: .55;
+  animation: orbitRotate 36s linear infinite;
+}
+
+.orbital-system::before,
+.orbital-system::after {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border: 1px solid rgba(167, 139, 250, .14);
+  border-radius: 50%;
+  transform: rotate(34deg) scaleX(1.35);
+}
+
+.orbital-system::after {
+  inset: 30%;
+  border-color: rgba(59, 130, 246, .12);
+  transform: rotate(-18deg) scaleX(1.65);
+}
+
+.orbital-system span {
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #bfdbfe;
+  box-shadow: 0 0 26px #60a5fa, 0 0 48px rgba(167, 139, 250, .9);
+}
+
+.shooting-star {
+  position: absolute;
+  width: 140px;
+  height: 1px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.9), transparent);
+  opacity: 0;
+  transform: rotate(-18deg);
+  animation: shootingStar 9s ease-in-out infinite;
+}
+
+.shooting-star-a {
+  top: 18vh;
+  left: 18vw;
+}
+
+.shooting-star-b {
+  top: 72vh;
+  left: 58vw;
+  animation-delay: 4.6s;
+  animation-duration: 12s;
+}
+
+.brand-mark,
+.button.primary {
+  background: linear-gradient(135deg, #7dd3fc, #6366f1 55%, #8b5cf6);
+  color: #020617;
+}
+
+.brand-mark {
+  box-shadow: 0 16px 46px rgba(99, 102, 241, .36);
+}
+
+.button.primary {
+  box-shadow: 0 18px 48px rgba(99, 102, 241, .35);
+}
+
+.button.secondary {
+  background: rgba(2, 6, 23, .42);
+  border-color: rgba(129, 140, 248, .32);
+}
+
+.hero h1 {
+  background: linear-gradient(110deg, #ffffff 0%, #e0f2fe 36%, #a78bfa 72%, #f0abfc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 42px rgba(125, 211, 252, .12);
+}
+
+.hero-card,
+.experience-card,
+.project-card,
+.skill-group,
+.timeline-card,
+.focus-card,
+.contact-card {
+  position: relative;
+  border-color: rgba(129, 140, 248, 0.28);
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, .86), rgba(15, 23, 42, .52));
+  box-shadow:
+    var(--shadow),
+    0 0 42px rgba(99, 102, 241, .08);
+  overflow: hidden;
+  backdrop-filter: blur(18px);
+}
+
+.hero-card::before,
+.project-card::before,
+.focus-card::before,
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 0%, rgba(125, 211, 252, .16), transparent 24rem);
+  opacity: .75;
+}
+
+.focus-card:hover,
+.project-card:hover,
+.skill-group:hover,
+.timeline-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(167, 139, 250, .52);
+  box-shadow:
+    var(--shadow),
+    0 0 54px rgba(99, 102, 241, .16);
+}
+
+.focus-card,
+.project-card,
+.skill-group,
+.timeline-card {
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.contact-card {
+  background:
+    radial-gradient(circle at top right, rgba(125, 211, 252, .22), transparent 22rem),
+    radial-gradient(circle at bottom left, rgba(139, 92, 246, .18), transparent 24rem),
+    linear-gradient(180deg, rgba(15, 23, 42, .92), rgba(15, 23, 42, .58));
+}
+
+@keyframes starDrift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-120px, 120px, 0); }
+}
+
+@keyframes nebulaSpin {
+  from { transform: translate3d(var(--space-x), var(--space-y), 0) rotate(0deg); }
+  to { transform: translate3d(var(--space-x), var(--space-y), 0) rotate(360deg); }
+}
+
+@keyframes nebulaFloat {
+  from { transform: translate3d(calc(var(--space-x) * .4), calc(var(--space-y) * .4), 0) scale(1); }
+  to { transform: translate3d(calc(var(--space-x) * .4 + 4vw), calc(var(--space-y) * .4 - 3vh), 0) scale(1.08); }
+}
+
+@keyframes planetFloat {
+  from { transform: translate3d(var(--space-x), var(--space-y), 0) rotate(-4deg); }
+  to { transform: translate3d(calc(var(--space-x) - 1vw), calc(var(--space-y) + 2vh), 0) rotate(4deg); }
+}
+
+@keyframes planetFloatSmall {
+  from { transform: translate3d(calc(var(--space-x) * -.45), calc(var(--space-y) * -.45), 0) rotate(6deg); }
+  to { transform: translate3d(calc(var(--space-x) * -.45 + 1.4vw), calc(var(--space-y) * -.45 - 1vh), 0) rotate(-8deg); }
+}
+
+@keyframes orbitRotate {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shootingStar {
+  0%, 72%, 100% { opacity: 0; transform: translate3d(0, 0, 0) rotate(-18deg); }
+  76% { opacity: .8; }
+  84% { opacity: 0; transform: translate3d(34vw, 11vh, 0) rotate(-18deg); }
+}
+
+@media (max-width: 900px) {
+  .planet-large {
+    right: -120px;
+    top: 110px;
+    opacity: .42;
+  }
+
+  .orbital-system {
+    right: -170px;
+    top: 44vh;
+    opacity: .28;
+  }
+
+  .planet-small {
+    opacity: .28;
+  }
+}
+
+@media (max-width: 720px) {
+  .space-scene {
+    background:
+      radial-gradient(circle at 70% 10%, rgba(99, 102, 241, 0.22), transparent 24rem),
+      radial-gradient(circle at 20% 42%, rgba(14, 165, 233, 0.15), transparent 24rem),
+      #02030a;
+  }
+
+  .nebula-a {
+    opacity: .3;
+  }
+
+  .planet-large {
+    width: 220px;
+    right: -130px;
+  }
+
+  .shooting-star {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stars,
+  .nebula,
+  .planet,
+  .orbital-system,
+  .shooting-star {
+    animation: none !important;
+  }
+}
+
+/* Detail polish: remove top-edge gap and smooth primary button edges -------- */
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #02030a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #02030a;
+}
+
+.space-scene {
+  inset: -2px 0 -2px 0;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: 0;
+  border-top: 0;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  background-clip: padding-box;
+  transform: translateZ(0);
+}
+
+.button:hover {
+  transform: translateY(-2px) translateZ(0);
+}
+
+.button.primary {
+  background: linear-gradient(90deg, #7dd3fc 0%, #818cf8 55%, #7c3aed 100%);
+  box-shadow:
+    0 18px 48px rgba(99, 102, 241, .35),
+    inset 0 0 0 1px rgba(255, 255, 255, .18);
+}
