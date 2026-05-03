@@ -1062,3 +1062,99 @@ body {
     0 18px 48px rgba(99, 102, 241, .35),
     inset 0 0 0 1px rgba(255, 255, 255, .18);
 }
+
+/* Mobile performance mode ------------------------------------------------- */
+@media (max-width: 720px) {
+  body::before {
+    display: none;
+  }
+
+  .space-scene {
+    background:
+      radial-gradient(circle at 75% 12%, rgba(99, 102, 241, 0.24), transparent 18rem),
+      radial-gradient(circle at 20% 36%, rgba(14, 165, 233, 0.12), transparent 18rem),
+      linear-gradient(180deg, #02030a 0%, #030712 48%, #02030a 100%);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    contain: paint;
+  }
+
+  .stars {
+    animation: none;
+    opacity: .32;
+    inset: 0;
+    background-size: 120px 120px, 190px 190px, 280px 280px;
+  }
+
+  .stars-b,
+  .nebula-b,
+  .nebula-c,
+  .planet-small,
+  .orbital-system,
+  .shooting-star {
+    display: none;
+  }
+
+  .nebula {
+    animation: none;
+    filter: blur(32px);
+    mix-blend-mode: normal;
+    opacity: .24;
+  }
+
+  .nebula-a {
+    top: -18rem;
+    right: -16rem;
+    width: 34rem;
+    height: 34rem;
+  }
+
+  .planet-large {
+    animation: none;
+    width: 230px;
+    top: 112px;
+    right: -110px;
+    opacity: .55;
+    box-shadow:
+      0 0 48px rgba(99, 102, 241, .24),
+      inset -28px -34px 56px rgba(0,0,0,.68);
+  }
+
+  .planet-large::before {
+    opacity: .45;
+  }
+
+  .planet-large::after {
+    background:
+      radial-gradient(circle at 30% 24%, rgba(255,255,255,.24), transparent 12%),
+      linear-gradient(135deg, transparent 0 44%, rgba(0,0,0,.55) 74%, rgba(0,0,0,.84) 100%);
+  }
+
+  .site-header {
+    backdrop-filter: none;
+    background: rgba(2, 3, 10, .94);
+  }
+
+  .hero-card,
+  .experience-card,
+  .project-card,
+  .skill-group,
+  .timeline-card,
+  .focus-card,
+  .contact-card {
+    backdrop-filter: none;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, .36);
+  }
+
+  .focus-card:hover,
+  .project-card:hover,
+  .skill-group:hover,
+  .timeline-card:hover,
+  .button:hover {
+    transform: none;
+  }
+
+  .reveal {
+    transition: opacity .35s ease, transform .35s ease;
+  }
+}
