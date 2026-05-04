@@ -16,6 +16,7 @@
     <title>Subeom Kwon</title>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   </head>
   <body>
     <div class="space-scene" aria-hidden="true">
@@ -24,8 +25,12 @@
       <div class="nebula nebula-a"></div>
       <div class="nebula nebula-b"></div>
       <div class="nebula nebula-c"></div>
-      <div class="planet planet-large"></div>
-      <div class="planet planet-small"></div>
+      <div class="planet planet-large-wrap">
+        <canvas class="planet-canvas" id="planet-large-canvas"></canvas>
+      </div>
+      <div class="planet planet-small-wrap">
+        <canvas class="planet-canvas" id="planet-small-canvas"></canvas>
+      </div>
       <div class="orbital-system orbit-one"><span></span></div>
       <div class="shooting-star shooting-star-a"></div>
       <div class="shooting-star shooting-star-b"></div>
@@ -299,5 +304,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="planets-gl.js"></script>
   </body>
 </html>

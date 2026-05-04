@@ -733,58 +733,39 @@ main,
 
 .planet {
   position: absolute;
-  border-radius: 50%;
   will-change: transform;
+  pointer-events: none;
 }
 
-.planet-large {
-  top: clamp(92px, 15vh, 180px);
-  right: clamp(-84px, 5vw, 120px);
-  width: clamp(190px, 24vw, 390px);
-  aspect-ratio: 1;
-  background:
-    radial-gradient(circle at 28% 22%, rgba(255,255,255,.95), transparent 8%),
-    radial-gradient(circle at 34% 32%, #93c5fd 0 12%, #60a5fa 24%, #6366f1 46%, #10172a 74%);
-  box-shadow:
-    0 0 90px rgba(99, 102, 241, .44),
-    0 0 150px rgba(14, 165, 233, .16),
-    inset -34px -38px 70px rgba(0,0,0,.62);
-  opacity: .78;
+.planet-large-wrap {
+  top: clamp(72px, 13vh, 160px);
+  right: clamp(-120px, 2vw, 80px);
+  width: clamp(200px, 26vw, 420px);
+  height: clamp(200px, 26vw, 420px);
+  opacity: 0.88;
   animation: planetFloat 10s ease-in-out infinite alternate;
+  filter:
+    drop-shadow(0 0 28px rgba(56, 189, 248, 0.55))
+    drop-shadow(0 0 70px rgba(99, 102, 241, 0.30))
+    drop-shadow(0 0 120px rgba(56, 189, 248, 0.12));
 }
 
-.planet-large::before {
-  content: "";
-  position: absolute;
-  inset: 43% -28%;
-  height: 16%;
-  border: 2px solid rgba(147, 197, 253, .52);
-  border-left-color: rgba(255,255,255,.18);
-  border-bottom-color: rgba(139, 92, 246, .34);
-  border-radius: 50%;
-  transform: rotate(-14deg);
-  filter: blur(.1px);
+.planet-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.planet-large::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(140deg, transparent 0 45%, rgba(0,0,0,.48) 72%);
-}
-
-.planet-small {
+.planet-small-wrap {
   left: clamp(18px, 8vw, 140px);
   bottom: 16vh;
-  width: clamp(68px, 8vw, 128px);
-  aspect-ratio: 1;
-  background:
-    radial-gradient(circle at 32% 26%, #f0f9ff, transparent 10%),
-    radial-gradient(circle at 38% 34%, #c084fc, #2563eb 48%, #020617 76%);
-  box-shadow: 0 0 52px rgba(96, 165, 250, .3), inset -20px -22px 46px rgba(0,0,0,.58);
-  opacity: .5;
+  width: clamp(80px, 9vw, 148px);
+  height: clamp(80px, 9vw, 148px);
+  opacity: 0.60;
   animation: planetFloatSmall 13s ease-in-out infinite alternate;
+  filter:
+    drop-shadow(0 0 16px rgba(167, 139, 250, 0.60))
+    drop-shadow(0 0 40px rgba(192, 132, 252, 0.28));
 }
 
 .orbital-system {
@@ -967,10 +948,10 @@ main,
 }
 
 @media (max-width: 900px) {
-  .planet-large {
+  .planet-large-wrap {
     right: -120px;
     top: 110px;
-    opacity: .42;
+    opacity: .50;
   }
 
   .orbital-system {
@@ -979,7 +960,7 @@ main,
     opacity: .28;
   }
 
-  .planet-small {
+  .planet-small-wrap {
     opacity: .28;
   }
 }
@@ -996,9 +977,16 @@ main,
     opacity: .3;
   }
 
-  .planet-large {
-    width: 220px;
-    right: -130px;
+  .planet-large-wrap {
+    animation: none;
+    width: 250px;
+    height: 250px;
+    top: 100px;
+    right: -120px;
+    opacity: .60;
+    filter:
+      drop-shadow(0 0 24px rgba(99, 102, 241, .30))
+      drop-shadow(0 0 50px rgba(56, 189, 248, .12));
   }
 
   .shooting-star {
@@ -1009,7 +997,8 @@ main,
 @media (prefers-reduced-motion: reduce) {
   .stars,
   .nebula,
-  .planet,
+  .planet-large-wrap,
+  .planet-small-wrap,
   .orbital-system,
   .shooting-star {
     animation: none !important;
@@ -1089,7 +1078,7 @@ body {
   .stars-b,
   .nebula-b,
   .nebula-c,
-  .planet-small,
+  .planet-small-wrap,
   .orbital-system,
   .shooting-star {
     display: none;
@@ -1107,27 +1096,6 @@ body {
     right: -16rem;
     width: 34rem;
     height: 34rem;
-  }
-
-  .planet-large {
-    animation: none;
-    width: 230px;
-    top: 112px;
-    right: -110px;
-    opacity: .55;
-    box-shadow:
-      0 0 48px rgba(99, 102, 241, .24),
-      inset -28px -34px 56px rgba(0,0,0,.68);
-  }
-
-  .planet-large::before {
-    opacity: .45;
-  }
-
-  .planet-large::after {
-    background:
-      radial-gradient(circle at 30% 24%, rgba(255,255,255,.24), transparent 12%),
-      linear-gradient(135deg, transparent 0 44%, rgba(0,0,0,.55) 74%, rgba(0,0,0,.84) 100%);
   }
 
   .site-header {
